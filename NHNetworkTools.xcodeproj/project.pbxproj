@@ -15,6 +15,7 @@
 		02F1B5E420696196006131B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B5E320696196006131B5 /* main.m */; };
 		02F1B5EE20696197006131B5 /* NHNetworkToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B5ED20696197006131B5 /* NHNetworkToolsTests.m */; };
 		02F1B5F920696197006131B5 /* NHNetworkToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B5F820696197006131B5 /* NHNetworkToolsUITests.m */; };
+		02F1B608206961A4006131B5 /* NHNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F1B607206961A4006131B5 /* NHNetworkTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		02F1B5F420696197006131B5 /* NHNetworkToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHNetworkToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F1B5F820696197006131B5 /* NHNetworkToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHNetworkToolsUITests.m; sourceTree = "<group>"; };
 		02F1B5FA20696197006131B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F1B606206961A4006131B5 /* NHNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHNetworkTools.h; sourceTree = "<group>"; };
+		02F1B607206961A4006131B5 /* NHNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHNetworkTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				02F1B5D520696196006131B5 /* AppDelegate.m */,
 				02F1B5D720696196006131B5 /* ViewController.h */,
 				02F1B5D820696196006131B5 /* ViewController.m */,
+				02F1B606206961A4006131B5 /* NHNetworkTools.h */,
+				02F1B607206961A4006131B5 /* NHNetworkTools.m */,
 				02F1B5DA20696196006131B5 /* Main.storyboard */,
 				02F1B5DD20696196006131B5 /* Assets.xcassets */,
 				02F1B5DF20696196006131B5 /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F1B608206961A4006131B5 /* NHNetworkTools.m in Sources */,
 				02F1B5D920696196006131B5 /* ViewController.m in Sources */,
 				02F1B5E420696196006131B5 /* main.m in Sources */,
 				02F1B5D620696196006131B5 /* AppDelegate.m in Sources */,
