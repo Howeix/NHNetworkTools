@@ -7,23 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "NHNetworkTools.h"
+
+#define api @"http://api.budejie.com/api/api_open.php"
 
 @interface ViewController ()
-
+//** name */
+@property (strong, nonatomic) NSMutableString *allValue;
 @end
+//static NSMutableString *_allValue;
+
 
 @implementation ViewController
 
+//-(NSMutableString *)allValue{
+//    if (!_allValue) {
+//        _allValue = [NSMutableString string];
+//    }
+//    return _allValue;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NHNetworkTools *tools = [NHNetworkTools shareNetworkTools];
+    
+    NSMutableDictionary *para = [NSMutableDictionary dictionary];
+    para[@"a"] = @"list";
+    para[@"c"] = @"data";
+    [tools Get:api withParameter:para forSuccess:^(NSDictionary *dict) {
+        NSLog(@"%@",dict);
+    } forFailure:^(NSError *error) {
+        
+    }];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
